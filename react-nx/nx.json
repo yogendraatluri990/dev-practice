@@ -13,7 +13,7 @@
           "test",
           "e2e"
         ],
-        "accessToken": "MDIzYWZmMzItYzFlMy00ODQ4LTg5Y2EtNmI3MjhkOTJhZGNifHJlYWQtd3JpdGU="
+        "accessToken": "M2UxZWNlOGQtNDgxZC00ODkwLTk4NDYtMTc2NDBhNjk4MmFifHJlYWQtd3JpdGU="
       }
     }
   },
@@ -33,17 +33,18 @@
         "^production"
       ]
     },
-    "test": {
-      "inputs": [
-        "default",
-        "^production"
-      ]
-    },
     "lint": {
       "inputs": [
         "default",
         "{workspaceRoot}/.eslintrc.json",
         "{workspaceRoot}/.eslintignore"
+      ]
+    },
+    "test": {
+      "inputs": [
+        "default",
+        "^production",
+        "{workspaceRoot}/jest.preset.js"
       ]
     }
   },
@@ -54,9 +55,12 @@
     ],
     "production": [
       "default",
+      "!{projectRoot}/.eslintrc.json",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
       "!{projectRoot}/tsconfig.spec.json",
-      "!{projectRoot}/.eslintrc.json"
+      "!{projectRoot}/jest.config.[jt]s",
+      "!{projectRoot}/src/test-setup.[jt]s",
+      "!{projectRoot}/test-setup.[jt]s"
     ],
     "sharedGlobals": []
   },
@@ -65,7 +69,7 @@
       "application": {
         "style": "scss",
         "linter": "eslint",
-        "bundler": "vite",
+        "bundler": "webpack",
         "babel": true
       },
       "component": {
