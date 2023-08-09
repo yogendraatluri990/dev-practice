@@ -1,14 +1,16 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
+import React from 'react';
 
-import NxWelcome from './nx-welcome';
 
-export function App() {
-  return (
-    <div>
-      <NxWelcome title="ad-agency" />
-    </div>
-  );
+import {HomeFeatureShellWeb} from '@react-nx/home';
+
+
+export class App extends React.Component {
+  render(): React.ReactNode {
+      return (
+        <div>
+          <HomeFeatureShellWeb title='React Native' message='Welcome to react native class'/>
+        </div>
+      )
+  }
 }
-
-export default App;

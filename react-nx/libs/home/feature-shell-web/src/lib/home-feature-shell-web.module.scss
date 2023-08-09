@@ -1,0 +1,26 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+$box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    box-shadow: $box-shadow;
+
+
+    &--title {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &--message {
+        text-align: center;
+    }
+}
