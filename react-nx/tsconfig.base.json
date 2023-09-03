@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@react-nx/ad-universe/fields": ["libs/ad-universe/fields/src/index.ts"],
+      "@react-nx/ad-universe/task": ["libs/ad-universe/task/src/index.ts"],
+      "@react-nx/ad-universe/to-do": ["libs/ad-universe/to-do/src/index.ts"],
+      "@react-nx/ad-universe/types": ["libs/ad-universe/types/src/index.ts"],
+      "@react-nx/home": ["libs/home/feature-shell-web/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

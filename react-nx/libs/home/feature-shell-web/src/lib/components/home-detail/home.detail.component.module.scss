@@ -1,0 +1,15 @@
+@use 'libs/ad-universe/styles/global.scss' as g;
+
+.home-detail {
+  &-container {
+    box-shadow: g.$box-shadow;    
+    width: 100%;
+    padding: 15px;
+  }
+
+  &-header {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px;
+  }
+}

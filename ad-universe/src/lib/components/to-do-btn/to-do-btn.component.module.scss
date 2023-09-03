@@ -1,0 +1,11 @@
+@use 'libs/ad-universe/src/lib/scss/global.scss' as g;
+
+.to-do-btn {
+   @include g.responsive-button(g.$buttons, 'primary', 'bs-btn-bg');
+
+   &:hover {
+    background-color: g.colorMapper(g.$buttons, 'primary', 'bs-btn-hover-bg');
+    color: g.colorMapper(g.$buttons, 'primary', 'bs-btn-hover-color');
+   }
+
+}

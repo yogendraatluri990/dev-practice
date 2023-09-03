@@ -19,7 +19,7 @@
           "apps/ad-agency/src/favicon.ico",
           "apps/ad-agency/src/assets"
         ],
-        "styles": ["apps/ad-agency/src/styles.scss"],
+        "styles": ["apps/ad-agency/src/styles.scss", "libs/ad-universe/styles/global.scss"],
         "scripts": [],
         "isolatedConfig": true,
         "webpackConfig": "apps/ad-agency/webpack.config.js"
