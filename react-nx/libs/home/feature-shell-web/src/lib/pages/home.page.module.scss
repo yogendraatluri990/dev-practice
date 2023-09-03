@@ -1,0 +1,58 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+@use  "libs/ad-universe/styles/global.scss"  as g;
+
+.page {
+    &-grid {
+        display: grid;
+        grid-template-areas: 'a a a a a a a a a a a a'
+                             'b b b b b b b b b b b b';
+       gap: 10px;       
+       justify-content: center;
+    }
+
+    &-container {
+        grid-area: a;
+        box-shadow: g.$box-shadow;        
+        width: 100%;
+        padding: 10px;
+
+    &-title {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &-message {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'sans-serif';
+        text-align: center;
+        padding: 10px;
+    }
+    }
+
+    &-detail {
+        grid: b;
+        width: 100%;
+    }
+
+    &-conditional{
+
+        &-container {
+            box-shadow: g.$box-shadow;
+            max-width: 400px;
+            width: 100%;
+            margin: auto;            
+        }
+
+     &-message {
+        text-align: center;
+     }
+
+    }
+}

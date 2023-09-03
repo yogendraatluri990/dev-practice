@@ -1,0 +1,32 @@
+
+$color-green-4CAF50: #4CAF50;
+$color-white-fff: #fff;
+$color-grey-2C3E50: #2c3e50;
+$color-grey-253544: #253544;
+$color-grey-233240: #233240;
+$color-grey-212F3C: #212f3c;
+
+
+$focus-shadow-rgb: 76, 91, 106;
+$active-shadow-rgb: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+
+
+$buttons:(
+    primary: (
+        'bs-btn-color': $color-white-fff,
+        'bs-btn-bg': $color-grey-2C3E50,
+        'bs-btn-border-color': $color-grey-2C3E50,
+        'bs-btn-hover-color': $color-white-fff,
+        'bs-btn-hover-bg': $color-grey-253544,
+        'bs-btn-hover-border-color': $color-grey-233240,
+        'bs-btn-focus-shadow-rgb': $focus-shadow-rgb,
+        'bs-btn-active-color': $color-white-fff,
+        'bs-btn-active-bg': $color-grey-233240,
+        'bs-btn-active-border-color': $color-grey-212F3C,
+        'bs-btn-active-shadow': $active-shadow-rgb,
+        'bs-btn-disabled-color': $color-white-fff,
+        'bs-btn-disabled-bg': $color-grey-2C3E50,
+        'bs-btn-disabled-border-color': $color-grey-2C3E50,
+    )
+);
+

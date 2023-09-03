@@ -1,0 +1,5 @@
+
+@function colorMapper($base, $groupName, $key) {
+    $color: map-get(map-get($base, $groupName), $key);
+    @return $color
+}
